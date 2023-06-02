@@ -1,0 +1,1 @@
+cd git-practice-04 && git branch -r && git checkout main && git merge $(git branch -r --list 'origin/ready*' --format '%(refname:lstrip=3)') && git push origin --delete $(git branch -r --list 'origin/ready*' --format '%(refname:lstrip=3)') && git checkout main && git pull && git checkout $(git branch -r --list 'origin/update*' --format '%(refname:lstrip=3)') && git merge main

@@ -1,0 +1,1 @@
+mkdir dir1 && tofile2 && git add dir1
